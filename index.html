@@ -3,70 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كيميائي - محمد رواش | معامل ترست</title>
+  <title>الكيميائي محمد رواش</title>
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #fff);
       color: #333;
     }
-    .card {
-      max-width: 400px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
       text-align: center;
     }
-    .card img {
-      width: 140px;
-      height: 140px;
+    .hero img {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       margin-bottom: 20px;
     }
-    .card h2 {
-      margin: 10px 0 5px;
-      font-size: 24px;
+    .hero h1 {
+      font-size: 28px;
+      margin: 10px 0;
     }
-    .card p {
-      margin: 5px 0;
+    .hero p {
+      font-size: 18px;
+      margin: 6px 0;
+    }
+    .info {
+      background: #ffffff;
+      margin: 20px auto;
+      max-width: 500px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .info p {
       font-size: 16px;
+      margin: 10px 0;
     }
-    .card .buttons {
+    .contact-buttons {
       margin-top: 20px;
     }
-    .card .buttons a {
-      display: inline-block;
-      margin: 5px 10px;
-      padding: 10px 20px;
+    .contact-buttons a {
       text-decoration: none;
-      color: #fff;
+      color: white;
       background-color: #007bff;
-      border-radius: 10px;
-      transition: 0.3s;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin: 5px;
+      display: inline-block;
+      transition: background-color 0.3s;
     }
-    .card .buttons a:hover {
+    .contact-buttons a:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="images/portrait.png" alt="صورة الكيميائي محمد رواش">
-    <h2>محمد رواش</h2>
-    <p>كيميائي زيارات منزلية</p>
-    <p>الرقم التعريفي: 3120</p>
-    <p>مناطق التغطية: القاهرة</p>
+  <section class="hero">
+    <img src="/mnt/data/portrait.png" alt="الكيميائي محمد رواش">
+    <h1>الكيميائي محمد رواش</h1>
     <p>رقم التواصل: <a href="tel:01022097217">01022097217</a></p>
-    <p>تابع رسمي لمعامل ترست</p>
-    <div class="buttons">
+  </section>
+
+  <section class="info">
+    <p><strong>الرقم التعريفي:</strong> 3120</p>
+    <p><strong>الوظيفة:</strong> كيميائي زيارات منزلية</p>
+    <p><strong>مناطق التغطية:</strong> القاهرة</p>
+    <p><strong>تابع رسمي لمعامل ترست</strong></p>
+    <div class="contact-buttons">
       <a href="tel:01022097217">اتصل الآن</a>
       <a href="https://wa.me/201022097217" target="_blank">مراسلة واتساب</a>
     </div>
-  </div>
+  </section>
 </body>
 </html>
